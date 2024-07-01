@@ -7,10 +7,12 @@ mplfinance==0.12.10b0
 numpy==1.26.4
 packaging==24.1
 pandas==2.2.2
+plotly==5.22.0
 python-dateutil==2.9.0.post0
 pytz==2024.1
 redis==5.0.7
 requests==2.32.3
+TA-Lib==0.4.32
 tabulate==0.9.0
 termcolor==2.4.0
 urllib3==2.2.2
