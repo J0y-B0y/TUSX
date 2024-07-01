@@ -423,22 +423,6 @@ def validate_symbol(symbol):
             return True
     return False
 
-def plot_heatmap(data, title, x_labels, y_labels):
-    fig = go.Figure(data=go.Heatmap(
-        z=data,
-        x=x_labels,
-        y=y_labels,
-        colorscale='Viridis'
-    ))
-
-    fig.update_layout(
-        title=title,
-        xaxis_nticks=36,
-        template='plotly_dark'
-    )
-
-    fig.show()
-
 # Display a summary of the entire portfolio
 def portfolio_summary():
     portfolio = load_portfolio()
