@@ -1,5 +1,11 @@
+![TUSX Banner](https://github.com/J0y-B0y/TUSX/blob/main/Banner.jpg)
+
 # TUSX: TSX Portfolio Management System
 **Author:** Divjot Singh
+
+![Python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)
+![Redis](https://img.shields.io/badge/Database-Redis-red.svg)
+![CLI](https://img.shields.io/badge/Interface-CLI-blue.svg)
 
 ## Problem Statement:
 
@@ -11,35 +17,38 @@ TUSX enhances portfolio management by offering real-time tracking, detailed fina
 
 - Python 3.x
 - Redis Server
-- Email account for sending notifications (e.g., Gmail)
 
-## Structure:
+## Structure
 
 The project comprises a single Python file (`main.py`) and a `requirements.txt` file.
 
 - **Main File (`main.py`):**
-  This file encapsulates all functionalities, including adding, updating, deleting, and viewing stocks, fetching stock details, monitoring the portfolio for threshold breaches, and sending email notifications.
+  This file encapsulates all functionalities, including adding, updating, deleting, and viewing stocks, fetching stock details, monitoring the portfolio for threshold breaches, and sending notifications.
 
 - **Configuration File (`requirements.txt`):**
   This file enumerates all the dependencies required to run the project, ensuring that users can set up the necessary environment without compatibility issues.
 
-## Features:
+## Features
+
+### Core Features
 
 - **Add Stock:** Add new stocks to the portfolio with purchase details and loss thresholds.
 - **Update Stock:** Modify existing stock details in the portfolio.
 - **Delete Stock:** Remove stocks from the portfolio.
-- **View Stock Details:** Access detailed information for a specific stock, including a candlestick chart.
+- **View Stock Details:** Access detailed information for a specific stock, including financial and technical details.
 - **List Stocks:** Display all stocks in the portfolio with their current status.
 - **Portfolio Summary:** Provide a comprehensive summary of the portfolio.
 - **Search and View Stock:** Search for a stock and view its current details.
-- **Automated Alerts:** Monitor the portfolio and send email notifications if the stock price drops below the threshold.
 
-## Configuration Variables:
+### New Features
+
+- **Enhanced Stock Charts:** Generate interactive candlestick, line, and bar charts with Plotly for detailed stock performance visualization.
+- **Candlestick Patterns:** Identify and highlight key candlestick patterns such as Hammer, Bullish Engulfing, Morning Star, etc., in the candlestick charts.
+- **Detailed Sub-Tables:** Access in-depth financial metrics and technical indicators for each stock, presented in a well-formatted sub-table.
+
+## Configuration Variables
+
 These variables need to be configured before running the program:
-
-- **Email Configuration:**
-  - `from_email`: Sender's email address.
-  - `from_password`: Sender's email password.
 
 - **Redis Configuration:**
   - `r`: Redis connection details (host, port, db).
